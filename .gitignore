@@ -1,0 +1,27 @@
+# Upstream transcript corpus (ChatPRD/lennys-podcast-transcripts) — never
+# republished. If you clone the source for a rebuild, put it under episodes/
+# and these patterns keep it out of any future commits.
+episodes/
+episodes-source/
+index/
+
+# Working files from extraction passes — not part of the published library.
+triage.jsonl
+phase*-*.jsonl
+guests-manifest.json
+workflow-args.json
+pilot-guests.json
+
+# Build script intermediates (the upstream's own scripts dir, if cloned in)
+scripts/
+
+# Editor / OS noise
+.DS_Store
+*.pyc
+__pycache__/
+.venv/
+.env
+.env.local
+
+# Claude Code session state — never goes in repo
+.claude/
