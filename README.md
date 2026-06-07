@@ -14,14 +14,17 @@ Picks 3-5 grounded voices, prefers tension pairs so the council actually argues,
 
 ## Why grounded matters
 
-Anyone can prompt "channel April Dunford." A persona card backed by her actual words — quotes with timestamps and the episode link — is something you'd trust in a spec review. That line is the whole quality bar.
+Anyone can prompt "channel April Dunford." A persona card backed by her actual words — quotes with timestamps and a link to the episode — is something you can defend in a spec review.
 
-During the build, extraction agents refused to fabricate three times:
-- Balfour's "Four Fits" wasn't in the episode → renamed `platform-lifecycle-balfour`
-- "Eigenquestions" is Mehrotra's, not Mehta's → split into two cards
-- Multiple guests with name collisions (Shah, Mehta) → disambiguated by first-last slugs
+Every card carries:
 
-The cards are citable in a spec review, not cosplay.
+- A named framework with a one-line thesis
+- 2-4 verbatim anchor quotes with timestamps
+- 3-5 signature questions the person would ask your idea
+- An explicit "when this applies / when it doesn't" boundary
+- A "common misuse" the owner warns against
+
+That's the quality bar. No invented quotes, no generic advice, no caricature.
 
 ---
 
@@ -29,7 +32,7 @@ The cards are citable in a spec review, not cosplay.
 
 | | Count | Path |
 |---|---:|---|
-| Framework cards | 272 | `frameworks/` |
+| Framework cards | 271 | `frameworks/` |
 | Persona cards | 265 | `personas/` |
 | Tension pairs (productive disagreements) | 367 | `personas/ROSTER.md` |
 | Council skill | 1 | `skill/SKILL.md` |
@@ -102,12 +105,11 @@ git clone https://github.com/ChatPRD/lennys-podcast-transcripts.git episodes-sou
 
 ---
 
-## What this is NOT
+## Caveats
 
-- Not a replacement for `/challenge` (that's a fixed reasoning panel, not a roster pick)
-- Not `/peer` (that's a 1:1 mode toggle, not a council)
-- Not a fleet for execution work (councils deliberate, they don't ship)
-- Not exhaustive — niche frameworks are sometimes folded into a parent's card
+- **Lenny corpus only.** Voices outside that corpus (e.g. authors who haven't appeared on the show) aren't represented. Add your own card to fill a gap.
+- **A snapshot.** Built from the 303 episodes available at build time. New episodes don't appear automatically.
+- **Derivative.** The cards are interpretation of public conversations. Helpful in a council, not a substitute for the original source.
 
 ---
 
