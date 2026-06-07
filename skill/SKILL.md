@@ -7,7 +7,7 @@ description: Assemble a custom council for a specific task from the Lenny ground
 
 Custom council assembled per-task. Pulls from two pools:
 
-1. **Lenny grounded personas** at `~/claude-apps/lenny-council/personas/` — **265 framework owners**, expanded from the original 26 marquee names to cover the full 303-transcript corpus. Includes the canonical voices (Dunford, Cagan, Torres, Moesta, Wodtke, Lochhead, Duke, Biddle) AND ~240 additional grounded personas across product strategy, growth, decisions, design, AI, careers, leadership, etc. All cards trace to real podcast transcripts with timestamped anchor quotes.
+1. **Lenny grounded personas** at `~/claude-apps/lenny-council/personas/` — **265 framework owners** spanning product strategy, growth, discovery, decisions, design, AI, careers, leadership, and execution. Every card traces to a real podcast transcript with timestamped anchor quotes — citable in a spec review.
 2. **Skill agents** in `~/.claude/skills/` — the user's curated thinking partners (challenge, first-principles, shreyas-lens, peer, critique, lens, etc.).
 
 The roster for THIS task is chosen by domain match + tension pair preference. Council members debate the task in parallel; a synthesizer reads all outputs and produces a verdict + dissent log + action items.
@@ -41,7 +41,7 @@ Read `~/claude-apps/lenny-council/personas/ROSTER.md`. It contains:
 - **265 personas** with their domains + match keywords + clashes_with field
 - A tension map of **367 productive disagreement pairs**
 
-This is the source of truth — don't reason from memory. The roster is large enough now that the "obvious" pick from the original 26 may not be the strongest match. Scan keyword overlap across the full table before seating. Niche voices (e.g. a guest who built the exact thing the user is asking about) often beat marquee names on specificity.
+This is the source of truth — don't reason from memory. Scan keyword overlap across the full table before seating. Niche voices (e.g. a guest who built the exact thing the user is asking about) often beat marquee names on specificity.
 
 ## Step 3 — Pick the council (3-5 members total)
 
